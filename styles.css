@@ -1,63 +1,135 @@
-/* Add this CSS to your existing styles.css or create a new CSS file */
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: #333; /* Dark background */
-    font-family: Arial, sans-serif;
-    color: #fff; /* Light text color */
-  }
-  
-  header {
-    background-color: #333;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #444; /* Slightly lighter background */
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1, h2 {
-    color: #fff;
-  }
-  
-  .project-button {
-    border: 1px solid #555; /* Darker border */
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    background-color: #555; /* Darker background */
-  }
-  
-  .project-button h3 {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .project-button p {
-    color: #ccc; /* Lighter text color */
-  }
-  
-  .project-button a {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+
+
+
+
+
+:root {
+    --background-color: #0d1117;
+    --text-color: #c9d1d9;
+    --link-color: #58a6ff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(47, 47, 47); /* Slightly lighter shade */
+    margin-top: auto;
+    margin-bottom: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #ffffff; /* Set link color as needed */
+    height: 100px; /* Adjust the height to your desired value */
+    z-index: 2; /* Place the header above the tabs */
+
+}
+
+
+.text-container {
+    margin: 0 30px; /* 20px margin on both left and right sides */
+    margin-top: 20px;
+}
+
+.text-container h1,
+.text-container p {
+    margin: 0; /* Remove margin for h1 and p */
     margin-top: 10px;
-  }
-  
-  .project-button a:hover {
-    background-color: #0056b3;
-  }
-  
+}
+
+.header-left {
+    text-align: left;
+
+}
+
+.header-right {
+    text-align: right;
+}
+
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #7db9e8; /* Light blue background color */
+    border-radius: 8px; /* Add this line for rounded corners */
+}
+
+.icon {
+    position: relative;
+    margin: 0 3px;
+}
+
+.text {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 4px;
+    margin: 2px;
+    text-align: center;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto; /* Set width to auto to fit the content */
+    font-size: 12px;
+}
+
+.icon-container .icon:hover .text {
+    display: block;
+    background-color: gray;
+}
+
+
+
+
+
+
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--background-color);
+    padding: 10px;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.section {
+    padding: 20px;
+}
+
+.project {
+    background-color: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    --background-color: #0d1117;
+    --text-color: #c9d1d9;
+    --link-color: #58a6ff;
+}
+
+/* Add a button or toggle to switch between light and dark mode */
