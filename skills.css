@@ -1,0 +1,80 @@
+.skills-container {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 2% 0.5%;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    background-color: rgb(53, 62, 72);
+    border-radius: 4px;
+}
+
+.skill-column {
+    flex: 1; /* Each column takes up equal space */
+    padding: 0 20px; /* Add some padding between columns */
+    border-right: 2px solid #acacac;
+}
+
+.skill-column:last-child {
+    border-right: none; /* Remove the border from the last column */
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space between each skill */
+}
+
+.skill img {
+    height: 6vh;
+    margin-right: 10px; /* Space between icon and skill info */
+}
+
+
+
+.skill-info {
+    flex-grow: 1; /* Allow skill-info to fill the remaining space */
+}
+
+.percentage-bar {
+    background-color: #e0e0e0; /* Light grey color */
+    border-radius: 5px;
+    overflow: hidden; /* Ensures the inner .percentage div is contained within the border-radius */
+}
+
+.percentage {
+    background-color: #4caf50; /* Default to green for all skills */
+    color: white;
+    text-align: center;
+    line-height: 20px; /* Adjust line-height to vertically center the text */
+    height: 20px; /* Fixed height of the bar */
+    transition: width 0.3s ease-in-out;
+    width: 0%; /* Default width, to be set inline or with an additional class */
+}
+
+.percentage1 {
+    background-color: orange; /* Default to green for all skills */
+    color: white;
+    text-align: center;
+    line-height: 20px; /* Adjust line-height to vertically center the text */
+    height: 20px; /* Fixed height of the bar */
+    transition: width 0.3s ease-in-out;
+    width: 0%; /* Default width, to be set inline or with an additional class */
+}
+
+/* Specific widths for the skill percentages */
+.skill-python .percentage { width: 99%; }
+.skill-jsts .percentage { width: 89%; }
+.skill-htmlcss .percentage { width: 94%; }
+.skill-c .percentage { width: 46%; }
+.skill-sql .percentage { width: 90%; }
+.skill-tableaupowerbi .percentage { width: 85%; }
+.skill-jupyter .percentage { width: 99%; }
+.skill-streamlit .percentage { width: 90%; }
+
+/* Add a media query for small screens to avoid icons becoming too small */
+@media (max-height: 300px) {
+    .skill img {
+        height: 3vh; /* Minimum height of icons on small screens */
+    }
+}
