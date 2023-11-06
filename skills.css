@@ -1,10 +1,10 @@
 .skills-container {
     margin-top: 10px;
     margin-left: 10px;
-    padding: 2% 0.5%;
+    padding: 2% 2%;
     display: flex;
     justify-content: space-between;
-    width: 85%;
+    width: 95%;
     background-color: rgb(53, 62, 72);
     border-radius: 4px;
 }
@@ -20,6 +20,7 @@
 }
 
 .skill {
+    padding-top: 10px;
     display: flex;
     align-items: center;
     margin-bottom: 20px; /* Space between each skill */

@@ -1,6 +1,33 @@
+/* This styles the scrollbar track */
+::-webkit-scrollbar {
+    width: 12px;  /* You can adjust the width as you prefer */
+  }
+  
+  /* This styles the scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4A4A4A; /* Dark grey color */
+    border-radius: 6px; /* Rounded corners on the scrollbar handle */
+  }
+  
+  /* Optional: this styles the scrollbar handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #616161; /* A slightly lighter grey for hover effect */
+  }
+  
+  /* This styles the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: #2e2e2e; /* Even darker grey color for the track */
+    border-radius: 6px;  /* Rounded corners on the track */
+  }
+  
+
+
+
+  
+
 .tabs-container {
-    position: absolute;
-    top: 105px; /* Adjust the distance from the top to position the tabs */
+    position: fixed;
+    top: 100px; /* Adjust the distance from the top to position the tabs */
     right: 0;
     bottom: 0; /* Stretch the container to the bottom */
     width: 10%; /* Adjust the width of the tab container */
@@ -141,18 +168,16 @@ header {
 }
 
 
-
-
-
-
-
-
 body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: Arial, sans-serif;
     margin-top: 130px;
     padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 11%;
+
 }
 
 nav ul {

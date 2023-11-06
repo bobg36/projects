@@ -1,0 +1,24 @@
+.projects-container {
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex; /* Enables flexbox */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-between; /* Evenly spaces the children, adding space between the lines */
+}
+
+.project {
+    background-color: rgb(53, 62, 72);
+    color: white; /* Assuming you want light text on a dark background */
+    margin: 10px; /* This adds space around each project */
+    width: calc(50% - 20px); /* 50% to fit two per row, minus 20px for margin */
+    height: 350px;
+    box-sizing: border-box; /* Includes padding and border in the element's width */
+    /* Add height or max-height if needed */
+}
+
+/* Responsive styling for smaller devices */
+@media (max-width: 768px) {
+    .project {
+        width: calc(100% - 20px); /* On small screens, make each project full width minus margin */
+    }
+}
