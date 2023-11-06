@@ -1,24 +1,116 @@
 .projects-container {
     padding-top: 10px;
     padding-left: 10px;
-    display: flex; /* Enables flexbox */
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    justify-content: space-between; /* Evenly spaces the children, adding space between the lines */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; /* This adds some space between the projects */
 }
 
 .project {
     background-color: rgb(53, 62, 72);
-    color: white; /* Assuming you want light text on a dark background */
-    margin: 10px; /* This adds space around each project */
-    width: calc(50% - 20px); /* 50% to fit two per row, minus 20px for margin */
+    color: white;
+    margin-bottom: 20px; /* Space between rows of projects */
+    width: calc(50% - 20px); 
     height: 350px;
-    box-sizing: border-box; /* Includes padding and border in the element's width */
-    /* Add height or max-height if needed */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content */
+    position: relative; /* Needed for absolute positioning of children */
 }
 
-/* Responsive styling for smaller devices */
+.project-media {
+    width: 100%;
+    position: relative; /* Ensure that the position is relative for the absolute positioning of the links */
+}
+
+.project-media img {
+    width: 100%;
+}
+
+.project-links {
+    position: absolute;
+    top: 10px; /* Position from the top of the parent */
+    right: 10px; /* Position from the right of the parent */
+    display: flex;
+    gap: 10px;
+}
+
+.project-links a {
+    display: block;
+    background-color: transparent; /* In case you want to add a background color */
+}
+
+.project-links img {
+    height: 25px; /* Adjust the size as needed */
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+.project-links a:hover img {
+    transform: scale(1.3); /* Increase the size of the images slightly on hover */
+}
+
+.project-links a:hover {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between; /* Aligns the first child to the start and the last child to the end */
+    align-items: center; /* Centers items vertically within the container */
+    width: 100%; /* Ensure the .project-header takes up full width */
+}
+
+.project-tags {
+    display: flex;
+    margin-left: auto;
+
+}
+
+h3 {
+    margin: 0; /* Removes any default margin */
+    padding-right: 10px; /* Add some padding if needed */
+    /* other styles if needed */
+}
+
+.tag {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+    font-size: 0.75em;
+    border-radius: 3px;
+    white-space: nowrap;
+    border: 1px solid white;
+    display: inline-block; /* This makes sure tags flow in line and can be spaced properly */
+
+}
+
+.tag:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.project-info {
+    width: 100%; /* Match the width of project-media */
+    color: rgb(173, 186, 199);
+}
+
+.project-para {
+    padding: 0 10px;
+}
+
+.project:hover {
+    border: 1px solid white;
+}
+
+/* Responsive tweaks for smaller screens */
 @media (max-width: 768px) {
     .project {
-        width: calc(100% - 20px); /* On small screens, make each project full width minus margin */
+        width: calc(100% - 20px);
     }
 }

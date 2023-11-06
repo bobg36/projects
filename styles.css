@@ -99,12 +99,25 @@ header {
     margin-top: 20px;
 }
 
+.header-icon {
+    height: auto; /* Maintain aspect ratio */
+    width: 24px; /* You can adjust this according to your icon's size */
+    margin-right: 10px; /* Add some space between the icon and the text */
+}
+
 .text-container h1,
 .text-container p {
     margin: 0; /* Remove default margins */
     margin-top: 5px; /* Add top margin */
     font-family: Arial, sans-serif; /* Specify Arial font */
     font-weight: 300; /* Lighter font weight, if available */
+}
+
+.project-para {
+    line-height: 1.6; /* Increase line spacing */
+    margin-top: 10px; /* Top margin */
+    margin-bottom: 10px; /* Bottom margin */
+    text-indent: 20px; /* Indent the first line of the paragraph */
 }
 
 .text-container h2 {
