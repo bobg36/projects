@@ -4,14 +4,13 @@
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-between; 
-    gap: 20px; /* This adds some space between the projects */
 }
 
 .project {
     background-color: rgb(53, 62, 72);
     color: white;
     margin-bottom: 20px; /* Space between rows of projects */
-    width: calc(50% - 20px); 
+    width: calc(50% - 8px); 
     height: 350px;
     box-sizing: border-box;
     display: flex;
@@ -74,7 +73,8 @@
 h3 {
     margin: 0; /* Removes any default margin */
     padding-right: 10px; /* Add some padding if needed */
-    /* other styles if needed */
+    font-weight: 300; /* Makes the font thinner */
+    /* Add other styles if needed */
 }
 
 .tag {
