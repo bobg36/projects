@@ -117,7 +117,14 @@ header {
     line-height: 1.6; /* Increase line spacing */
     margin-top: 10px; /* Top margin */
     margin-bottom: 10px; /* Bottom margin */
-    text-indent: 20px; /* Indent the first line of the paragraph */
+    text-align: justify;
+    flex: 1;
+
+    /* text-indent: 20px; */
+}
+
+.project-info {
+    display:flex;
 }
 
 .text-container h2 {

@@ -14,7 +14,7 @@
         <div class="header-left">
             <div class="text-container">
                 <h1>Robert Guo</h1>
-                <p>visualisation</p>
+                <p>visualising is fun</p>
             </div>
         </div>
         <div class="header-right">
@@ -97,7 +97,16 @@
                 </div>
             </div>
             <div class="project-info">
-                <p class="project-para">hello</p>
+                <p class="project-para">
+                    When 2 axies are bred together, cryptocurrency is paid in exchange for an egg.
+                    Two Cryptocurrencies are always used: SLP (higher breed count = more expensive) and AXS (flat amount).
+                    Cryptocurrencies are volatile but higly correlated, so ETH or BTC is useful as base currency for accounting purposes.
+                    My streamlit app gets USD price data from market_basic_stats (see databases), and visualises breed costs 1-7 in terms of ETH.
+
+                    
+
+
+                    </p>
             </div>
         </div>
         <!-- Project 1 - v3 price history -->
@@ -123,8 +132,13 @@
                 </div>
             </div>
             <div class="project-info">
-                <p class="project-para">hello</p>
-
+                <p class="project-para">
+                    Price and Volume for specific builds separated by class <br>
+                    - all sales data is stored in a all_sales (see databases) <br>
+                    - all the visualisations are generated locally using SQL queries and matplotlib <br>
+                    - The HTML for the website is then generated and pushed to github pages <br>
+                    - Historical price and demand is used to make trading decisions
+                </p>
             </div>
         </div>
         
@@ -146,7 +160,14 @@
                 </div>
             </div>
             <div class="project-info">
-                <p class="project-para">hello</p>
+                <p class="project-para">
+                    A Tableau visualisation to compare Parts <br>
+                    - Demand for types of axie can differ greatly, even if 1 part is different <br>
+                    - Interactive Tableau filters useful for switching and selecting traits <br>
+                    - Side by side parts for easy comparison <br>
+                    - Cluster chart makes high volume/price very obvious <br>
+
+                </p>
             </div>
         </div>
 
@@ -169,14 +190,26 @@
                 </div>
             </div>
             <div class="project-info">
-                <p class="project-para">hello</p>
+                <p class="project-para">
+                    'brute-download-whale-data'<br>
+                    -Brute force scraping of richest BTC wallets to look for trading patterns / market indicators (none found unfortunately)
+
+                </p>
+                <p class="project-para">
+                    'candles_to_png.py'<br>
+                    -iterates through trading data and generates .png price candles pixel by pixel using PIL (Python Imaging Library). <br>
+                </p>
+                <p class="project-para">
+                    'convert_minute_candles.py'<br>
+                    -converts minutely price data to any specified timeframe<br>
+                </p>
             </div>
         </div>        
 
         <!-- Project 5 id distribution-->
         <div class="project">
             <div class="project-header">
-                <h3>sales id distribution (add github link)</h3>
+                <h3>Sales ID Distribution</h3>
                 <div class="project-tags">
                     <span class="tag">Python</span>
                     <span class="tag">Jupyter</span>
@@ -186,20 +219,34 @@
             <div class="project-media">
                 <img src="images/project thumbnails/iddistribution.png" alt="Project 1">
                 <div class="project-links">
-                    <a href="https://github.com/bobg36/btc-price-data" target="_blank">
+                    <a href="https://github.com/bobg36/gene-analysis/blob/main/visualise_id_distribution.ipynb" target="_blank">
                         <img src="images/icons/github icon whitebg.png" alt="GitHub">
                     </a>
                 </div>
             </div>
             <div class="project-info">
-                <p class="project-para">hello</p>
+                <p class="project-para">
+                    <strong>Problem: </strong>
+                    1 month of missing sales data from when GraphQL endpoints changed<br><br>
+                    <strong>Hypothesis: </strong>
+                    newer axies (high id) are traded more often than older axies (low id)
+
+
+                </p>
+                <p class="project-para">
+
+                    <strong>Results: </strong>
+                    more than half of recently traded axies have id higher than 10m (12m total)<br><br>
+                    <strong>Solution: </strong>
+                    Iterate through top 2m id and grab all sales, since most sales are high id
+                </p>
             </div>
         </div>     
 
         <!-- recessive gene analysis-->
         <div class="project">
             <div class="project-header">
-                <h3>Recessive gene analysis (add github link)</h3>
+                <h3>Recessive Gene Analysis</h3>
                 <div class="project-tags">
                     <span class="tag">Python</span>
                     <span class="tag">Jupyter</span>
@@ -209,7 +256,7 @@
             <div class="project-media">
                 <img src="images/project thumbnails/recessivegeneanalysis.png" alt="Project 1">
                 <div class="project-links">
-                    <a href="https://github.com/bobg36/btc-price-data" target="_blank">
+                    <a href="https://github.com/bobg36/gene-analysis" target="_blank">
                         <img src="images/icons/github icon whitebg.png" alt="GitHub">
                     </a>
                 </div>
